@@ -1,0 +1,108 @@
+USE devcamp_sql_university_schema;
+
+INSERT INTO Students (student_id, students_name, students_email, student_major)
+VALUES
+  (1, 'Luke Skywalker', 'lskywalker0123@student.rccc.edu', 'History'),
+  (2, 'Brandon Stark', 'bstark0124@student.rccc.edu', 'English'),
+  (3, 'Jon Snow', 'jsnow0125@student.rccc.edu', 'Math'),
+  (4, 'Jennifer Aniston', 'janiston0126@student.rccc.edu', 'Science'),
+  (5, 'Robin Williams', 'rwilliams0127@student.rccc.edu', 'History'),
+  (6, 'Liam Shaw', 'lshaw0128@student.rccc.edu', 'English'),
+  (7, 'Misty Shaw', 'mshaw0129@student.rccc.edu', 'Computer Science'),
+  (8, 'Steve Rogers', 'srogers0130@student.rccc.edu', 'English'),
+  (9, 'Chandler Jackson', 'cjackson0131@student.rccc.edu', 'Math'),
+  (10, 'Donald Trump', 'dtrump0132@student.rccc.edu', 'Computer Science'),
+  (11, 'Peter Parker', 'pparker0133@student.rccc.edu', 'English'),
+  (12, 'Stan Lee', 'slee0134@student.rccc.edu', 'Math'),
+  (13, 'Edward Snowden', 'esnowden0135@student.rccc.edu', 'Computer Science'),
+  (14, 'Betty White', 'bwhite0136@student.rccc.edu', 'English'),
+  (15, 'Belinda Wiggins', 'bwiggins0137@students.rccc.edu', 'Math'),
+  (16, 'Dorothy Smith', 'dsmith0138@student.rccc.edu', 'Computer Science');
+
+INSERT INTO Professors (professor_id, professors_name, professors_email, professor_department)
+VALUES
+  (1, 'Connie Bishop', 'cbishop@rccc.edu', 'Computer Science'),
+  (2, 'Aaron Wiggins', 'awiggins@rccc.edu', 'English'),
+  (3, 'Thomas McDonald', 'tmcdonald@rccc.edu', 'Math'),
+  (4, 'Aimee Durham', 'adurham@rccc.edu', 'Computer Science'),
+  (5, 'John Brand', 'jbrand@rccc.edu', 'English'),
+  (6, 'Zackary Hubbard', 'zhubbard@rccc.edu', 'Math');
+
+INSERT INTO Courses (course_id, course_name, course_department, course_professor_id)
+VALUES
+  (1, 'Database Systems', 'Computer Science', 1),
+  (2, 'Intro to Literature', 'English', 2),
+  (3, 'Calculus I', 'Math', 3),
+  (4, 'Web Development', 'Computer Science', 4),
+  (5, 'Advanced Writing', 'English', 5),
+  (6, 'Calculus II', 'Math', 6);
+
+INSERT INTO Grades (grade_id, student_id, course_id, grade)
+VALUES
+  (1, 1, 1, 91.1),
+  (1, 2, 2, 75.2),
+  (1, 3, 3, 85.3),
+  (1, 4, 4, 63.4),
+  (2, 1, 1, 81.5),
+  (2, 2, 2, 82.6),
+  (2, 3, 3, 68.7),
+  (2, 4, 4, 70.8),
+  (3, 1, 1, 97.9),
+  (3, 2, 2, 78),
+  (3, 3, 3, 89.1),
+  (3, 4, 4, 83.2),
+  (4, 1, 1, 74.3),
+  (4, 2, 2, 95.4),
+  (4, 3, 3, 67.5),
+  (4, 4, 4, 98.6),
+  (5, 1, 1, 73.7),
+  (5, 2, 2, 80.8),
+  (5, 3, 3, 92.9),
+  (5, 4, 4, 94),
+  (6, 1, 1, 88.1),
+  (6, 2, 2, 71.2),
+  (6, 3, 3, 71.3),
+  (6, 4, 4, 62.4),
+  (7, 1, 1, 79.5),
+  (7, 2, 2, 77.6),
+  (7, 3, 3, 72.7),
+  (7, 4, 4, 61.8),
+  (8, 1, 1, 96.9),
+  (8, 2, 2, 65),
+  (8, 3, 3, 90.1),
+  (8, 4, 4, 69.2),
+  (9, 1, 1, 99.3),
+  (9, 2, 2, 66.4),
+  (9, 3, 3, 84.5),
+  (9, 4, 4, 86.6),
+	(10, 1, 1, 76.7),
+  (10, 2, 2, 87.8),
+  (10, 3, 3, 93.9),
+  (10, 4, 4, 64),
+  (11, 1, 1, 100),
+  (11, 2, 2, 61.1),
+  (11, 3, 3, 62.2),
+  (11, 4, 4, 82.3),
+	(12, 1, 1, 75.4),
+  (12, 2, 2, 90.5),
+  (12, 3, 3, 98.6),
+  (12, 4, 4, 76.7),
+  (13, 1, 1, 61.8),
+  (13, 2, 2, 77.9),
+  (13, 3, 3, 72),
+  (13, 4, 4, 95.1),
+  (14, 1, 1, 80.2),
+  (14, 2, 2, 87.3),
+  (14, 3, 3, 84.4),
+  (14, 4, 4, 68.5),
+  (15, 1, 1, 63.6),
+  (15, 2, 2, 92.7),
+  (15, 3, 3, 70.1),
+  (15, 4, 4, 71.2),
+  (16, 1, 1, 79.3),
+  (16, 2, 2, 93.4),
+  (16, 3, 3, 66.5),
+  (16, 4, 4, 89.6);
+
+SELECT *
+FROM professors;
